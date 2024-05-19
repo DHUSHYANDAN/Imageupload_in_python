@@ -9,6 +9,7 @@ app = Flask(__name__)
 client = MongoClient('mongodb://localhost:27017/')
 db = client['mydatabase']
 fs = gridfs.GridFS(db)
+# iam the project owner
 
 # Function to upload an image to MongoDB
 def upload_image(image_path, image_name):
